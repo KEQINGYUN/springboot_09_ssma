@@ -48,5 +48,10 @@ public class BookController {
     public R getPage2(@PathVariable  int currentPage,@PathVariable  int pageSize){
         return new R(true,iBookService.getPage(currentPage,pageSize));
     }
+    @GetMapping("{currentPage}/{pageSize}")
+    public R getPage3(@PathVariable  int currentPage,@PathVariable  int pageSize){
+        return new R(true,iBookService.getPage(currentPage,pageSize));
+    }
+
 
 }
