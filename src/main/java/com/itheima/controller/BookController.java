@@ -54,6 +54,7 @@ public class BookController {
     }
     @GetMapping("{currentPage}/{pageSize}")
     public R getPage4(@PathVariable  int currentPage,@PathVariable  int pageSize){
+        System.out.println("hot-fix");
         return new R(true,iBookService.getPage(currentPage,pageSize));
     }
 
