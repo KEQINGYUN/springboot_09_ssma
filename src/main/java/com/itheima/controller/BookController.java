@@ -56,6 +56,7 @@ public class BookController {
     public R getPage4(@PathVariable  int currentPage,@PathVariable  int pageSize){
         System.out.println("master test");
         System.out.println("hot-fix");
+        System.out.println("push test");
         return new R(true,iBookService.getPage(currentPage,pageSize));
     }
 
