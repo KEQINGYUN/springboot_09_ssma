@@ -57,6 +57,7 @@ public class BookController {
         System.out.println("master test");
         System.out.println("hot-fix");
         System.out.println("push test");
+        System.out.println("pull test");
         return new R(true,iBookService.getPage(currentPage,pageSize));
     }
 
